@@ -16,7 +16,7 @@ library(
 */
 
 def dummy
-binaryNode(label: 'mac-mini5') {
+binaryNode(label: 'mac-mini1') {
     ws ("workspace/${env.JOB_NAME}/pipelines".replace('%2F', '_')) {
         // git 'https://github.com/fabric8io/fabric8-pipeline-library.git'
         checkoutGeneralSCM(browser: 'github', url: 'https://github.com/Taki-Kun/testJenkinsSharedLibraries.git', name: [[name: '*/master']])
