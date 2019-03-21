@@ -8,7 +8,7 @@ node {
 
 // @Library('github.com/Taki-Kun/testJenkinsSharedLibraries@master') _
 library(
-    identifier: 'git@github.com:Taki-Kun/testJenkinsSharedLibraries.git@master',
+    identifier: 'github.com/Taki-Kun/testJenkinsSharedLibraries@master',
     changelog: false,
     retriever: modernSCM(
         [
