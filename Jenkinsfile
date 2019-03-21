@@ -22,4 +22,3 @@ binaryNode(label: 'mac-mini5') {
         checkoutGeneralSCM(browser: 'github')
     }
 }
-
