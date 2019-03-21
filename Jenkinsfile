@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 library(
-    identifier: 'github.com/Taki-Kun/testJenkinsSharedLibraries2@master',
+    identifier: 'git@github.com:Taki-Kun/testJenkinsSharedLibraries.git@master',
     changelog: false,
     retriever: modernSCM(
         [
