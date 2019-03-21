@@ -17,7 +17,7 @@ library(
 
 def dummy
 binaryNode(label: 'mac-mini5') {
-    ws ('pipelines'){
+    ws ("workspace/${env.JOB_NAME}/${env.BRANCH_NAME}/pipelines".replace('%2F', '_')) {
         // git 'https://github.com/fabric8io/fabric8-pipeline-library.git'
         checkoutGeneralSCM(browser: 'github')
     }
