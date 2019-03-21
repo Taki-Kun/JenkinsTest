@@ -6,13 +6,8 @@ library(
     retriever: modernSCM(
         [
             $class: 'GitSCMSource',
-            credentialsId: 'jenkins-global-ssh-key',
+            credentialsId: '846a4a04-da8e-4909-a5ff-eef9004b1eef',
             remote: 'git@github.com:Taki-Kun/testJenkinsSharedLibraries.git'
-            // traits: [
-            //     [
-            //         $class: 'jenkins.plugins.git.traits.BranchDiscoveryTrait'
-            //     ]
-            // ]
         ]
     )
 )
