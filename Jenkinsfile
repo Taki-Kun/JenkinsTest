@@ -16,7 +16,7 @@ library(
 */
 
 def dummy
-iOSNode(label: 'abc') {
+iOSNode(label: 'mac-mini5') {
     ws ('pipelines'){
         git 'https://github.com/fabric8io/fabric8-pipeline-library.git'
     }
