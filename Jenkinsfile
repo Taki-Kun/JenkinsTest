@@ -4,7 +4,7 @@
 /*
 library(
     identifier: 'github.com/Taki-Kun/testJenkinsSharedLibraries@master',
-    changelog: false,
+    // changelog: false,
     retriever: modernSCM(
         [
             $class: 'GitSCMSource',
