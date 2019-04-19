@@ -1,5 +1,7 @@
 #!/usr/bin/env groovy
 
+import org.jenkinsci.plugins.workflow.libs.Library
+
 @Library('github.com/Taki-Kun/testJenkinsSharedLibraries@master') _
 /*
 library(
