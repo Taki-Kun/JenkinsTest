@@ -18,6 +18,24 @@ library(
 )
 */
 
+pipeline {
+    agent {
+        node {
+            label 'mac-mini3'
+            customWorkspace "workspace/${JOB_NAME.replace('%2F', '/')}"
+        }
+    }
+
+    stages {
+        stage('test') {
+            steps {
+                echo "${PATH}"
+            }
+        }
+    }
+}
+
+/*
 def dummy
 // binaryNode(label: 'mac-book-pro-1') {
 binaryNode(argone: 'one') {
@@ -26,3 +44,4 @@ binaryNode(argone: 'one') {
         // checkoutGeneralSCM(browser: 'github', url: 'https://github.com/Taki-Kun/testJenkinsSharedLibraries.git', name: 'master')
     }
 }
+*/
