@@ -31,6 +31,7 @@ pipeline {
             steps {
                 sh "env"
                 echo "${PATH}"
+                sh "ls ~/"
             }
         }
     }
