@@ -26,12 +26,20 @@ pipeline {
         }
     }
 
+    environment {
+        LANG = "C.UTF-8"
+        LC_ALL = "en_US.UTF-8"
+        LANGUAGE = "en_US.UTF-8"
+        // HOME = "/Users/mac"
+    }
+
     stages {
         stage('test') {
             steps {
                 sh "env"
                 echo "${PATH}"
                 sh "ls ~/"
+                sh "echo 123 > ~/JenkinsTest"
             }
         }
     }
