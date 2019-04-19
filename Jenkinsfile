@@ -2,7 +2,6 @@
 
 import org.jenkinsci.plugins.workflow.libs.Library
 
-println("---------")
 
 @Library('github.com/Taki-Kun/testJenkinsSharedLibraries@master') _
 /*

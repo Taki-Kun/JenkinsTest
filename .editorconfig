@@ -5,6 +5,7 @@
 root = true
 
 # Unix-style newlines with a newline ending every file
+# Use UTF-8 by default
 [*]
 charset = utf-8
 end_of_line = lf
@@ -20,6 +21,12 @@ end_of_line = LF
 [VERSION]
 insert_final_newline = false
 
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
+indent_size = 4
+tab_width = 4
+
 # 4 space indentation
 [*.py]
 indent_style = space
@@ -34,21 +41,19 @@ tab_width = 8
 indent_style = tab
 indent_size = 2
 
-# Tab indentation (no size specified)
-[Makefile]
-indent_style = tab
-indent_size = 4
-tab_width = 4
-
 [*.yml]
 indent_style = space
 indent_size = 2
 
-[*.{less,yml}]
+[*.{less,yaml}]
 indent_style = space
 indent_size = 2
 
 [*.js]
+indent_style = space
+indent_size = 4
+
+[*.groovy]
 indent_style = space
 indent_size = 4
 
@@ -78,6 +83,7 @@ indent_size = 2
 [*.php]
 indent_size = 4
 
+# Use 4 spaces for indentation in Markdown files
 [*.md]
 indent_style = space
 indent_size = 4
@@ -94,3 +100,9 @@ insert_final_newline = false
 
 [BLACKLIST]
 insert_final_newline = false
+
+# Windows style line endings for Gradlew bat file
+[gradlew.bat]
+end_of_line = crlf
+indent_style = space
+indent_size = 2
