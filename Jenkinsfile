@@ -19,12 +19,7 @@ library(
 */
 
 pipeline {
-    agent {
-        node {
-            label 'master'
-            customWorkspace "workspace/${JOB_NAME.replace('%2F', '/')}"
-        }
-    }
+    agent 'mac-mini3'
 
     stages {
         stage('test') {
