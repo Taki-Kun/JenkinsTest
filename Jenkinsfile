@@ -29,7 +29,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                echo "${home}"
+                sh "env"
                 echo "${PATH}"
             }
         }
