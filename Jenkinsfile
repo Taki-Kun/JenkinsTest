@@ -29,8 +29,8 @@ pipeline {
     stages {
         stage('test') {
             steps {
+                echo "${home}"
                 echo "${PATH}"
-                sh "pwd"
             }
         }
     }
